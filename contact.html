@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <!-- <script src="https://www.google.com/recaptcha/enterprise.js?render=6LeQE1EpAAAAABTS-76DgH9ibddLUT_aRAmFzYtx"></script> -->
     <title>Emi - Resume</title>
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
 <body>
+    <div class="container">
     <section class="resume">
        <div class="resume_title">
             <div class="resume_title_img">
@@ -32,7 +33,7 @@
 
        <div class="resume_content_contactinfo">
        <div class="resume_content_Contact ">
-        <h2>Contact</h2>
+             <h2>Contact</h2>
         <div class="Contact_info">
         <div class="Contact_info_left">
         <ul>
@@ -53,16 +54,39 @@
             <div class="Contact_Form">
                 <h3>How Can I <span style="color: #04b4e0">Help You?</span></h3>
                 <div class="Form_input">
-                <ul>
-               <li> <input type="text" placeholder="Full Name"></li>
-                <li><input type="email" placeholder="Email Addess"></li>
-                <li><input type="text" placeholder="Subject"></li>
-            </ul>
-            <textarea placeholder="Message"></textarea></div>
-                <div class="robot">
-                    <input type="checkbox">I'm not a robot
-                    <!-- <div class="g-recaptcha" data-sitekey="6Ldbdg0TAAAAAI7KAf72Q6uagbWzWecTeBWmrCpJ"></div> -->
+              
+                <div class="Form_inputgroup_1">
+                <div>
+                    <label class="label" style="font-size: 13px; color:#04b4e0">Full Name</label>
+                    <input type="text" placeholder="Full Name" >
+                    </div>
+                    <div>
+                    <label class="label" style="font-size: 13px; color:#04b4e0">Email Address</label>
+                    <input type="email" placeholder="Email Addess" >
+            
+                    </div>
+                    <div>
+                     <label class="label" style="font-size: 13px; color:#04b4e0">Subject</label>
+                    <input type="text" placeholder="Subject" >
                 </div>
+            </div>
+                
+            <div class="Form_inputgroup_2">
+                <label class="label" style="font-size: 13px; color:#04b4e0">Message</label>
+            <textarea placeholder="Message" ></textarea>
+            <!-- <div class="Error"></div> -->
+        </div></div>
+               <!-- <div class="robot">
+                     <input type="checkbox">I'm not a robot
+                     <button class="g-recaptcha"
+    data-sitekey="6LeQE1EpAAAAABTS-76DgH9ibddLUT_aRAmFzYtx"
+    data-callback='onSubmit'
+    data-action='submit'>
+  Submit
+</button> 
+                          <div class="g-recaptcha" data-sitekey="6LeQE1EpAAAAABTS-76DgH9ibddLUT_aRAmFzYtx"></div>
+                </div> -->
+
                 <button>Send message</button>
             </div></div>
        </div>
@@ -71,14 +95,14 @@
        <div class="resume_nav">
         <div class="resume_nav_links">
             <ul>
-                <li > <a href="index.html"><i class="fa-solid fa-house fa-2xl" style="color:#222 " ></a></i>
-                 <span style = "position:absolute; top:110px; right:97px">Home</span></li>
-                <li ><a href=aboutme.html> <i class="fa-regular fa-user fa-2xl"style="color:#222" ></a></i>
-                 <span style="position:absolute;top:160px; right:97px">About Me</span></li>
-                <li > <a href="resume.html"><i class="fa-solid fa-graduation-cap fa-2xl" style="color: #222;"></a></i>
-                 <span style="position:absolute;top:210px; right:97px">Resume</span></li>
+                <li > <a href="index.html"><i class="fa-solid fa-house fa-2xl" style="color:#222 " onmouseover="this.style.color='#04b4e0'" onmouseout="this.style.color='#222'" ></a></i>
+                 <span style = "position:absolute; top:110px; right:104px">Home</span></li>
+                <li ><a href=aboutme.html> <i class="fa-regular fa-user fa-2xl"style="color:#222" onmouseover="this.style.color='#04b4e0'" onmouseout="this.style.color='#222'" ></a></i>
+                 <span style="position:absolute;top:160px; right:104px">About Me</span></li>
+                <li > <a href="resume.html"><i class="fa-solid fa-graduation-cap fa-2xl" style="color: #222;" onmouseover="this.style.color='#04b4e0'" onmouseout="this.style.color='#222'"></a></i>
+                 <span style="position:absolute;top:210px; right:104px">Resume</span></li>
                 <li > <a href="contact.html"><i class="fa-regular fa-envelope fa-2xl" style="color: #04b4e0;"></a></i>
-                 <span style="position:absolute;top:260px; right:97px">Contact</span></li>
+                 <span style="position:absolute;top:260px; right:104px">Contact</span></li>
              </ul>
         </div>
         <div class="resume_nav_arrows">
@@ -87,11 +111,44 @@
             <li><i class="fa-solid fa-chevron-left fa-2xl"></i></li>
         </ul>
         </div>
+        <div class="hams_show">
+            <div class="hams_menu" >
+                <i class="fa-solid fa-bars fa-xl" style="color: #fff;"></i></div>
+                <div class="showmenu">
+                    <div class="hams_menu" >
+                        <i class="fa-solid fa-bars fa-xl" style="color: #fff;" onclick="remove()"></i></div>
+                    <div class="resume_title_img">
+                           <img src="assets/Emi Photo.jpeg">
+                       </div>
+                       <div class="resume_title_name">
+                           <h2>Emi Sethu Priyadharsini</h2>
+                           <h4>Front-End Developer</h4>
+                       </div>
+                       <div class="showmenu_links">
+                       <ul><li><a href="index.html">Home</a></li>
+                       <li><a href="aboutme.html" >About Me</a></li>
+                       <li><a href="resume.html">Resume</a></li>
+                       <li><a href="contact.html">Contact</a></li></ul></div>
+                  
+                 
+                    <div class="resume_title_links">
+                   <ul>
+                  <li><a href="https://www.linkedin.com/in/emi-sethu-priyadharsini/"> <i class="fa-brands fa-linkedin-in fa-lg" style="color: #f7f7f8; " ></i></a></li>
+                  <li><a href ="https://github.com/Emi190289"><i class="fa-brands fa-github fa-lg" style="color: #f7f7f8"></i></a></li>
+                  </ul>  
+                  </div> 
+                 <div class="resume_title_btn">
+                      <button onclick="window.location.href='https://emipriyadharsini.neocities.org/Responsive/responsive';">Download CV</button>
+                  </div>
+                 <div class="resume_title_rights">© 2020 All rights reserved.</div>
+                       </div>
+                    </div>
        </div>
 
     
 </div>
     </section>
+</div>
     <script src="main.js"></script>
 </body>
 </html>
