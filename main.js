@@ -7,6 +7,7 @@ hams.addEventListener('click',()=>{
  function remove(){
     menuList.classList.remove('active')
 }
+
 const labelEl = document.querySelector('label');
 const inputEl = document.querySelector('input');
 inputEl.addEventListener('click',()=>{
