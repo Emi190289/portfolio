@@ -8,12 +8,10 @@ hams.addEventListener('click',()=>{
     menuList.classList.remove('active')
 }
 
-const labelEl = document.querySelector('label');
-const inputEl = document.querySelector('input');
-inputEl.addEventListener('click',()=>{
-    labelEl.classList.remove('label')
-    labelEl.classList.add('active')
-})
-
+// const field = document.getElementById("inputfield")
+// const blurfunction = () =>{
+//     field.value = "";
+//     alert("value is empty")
+// }
 
 
